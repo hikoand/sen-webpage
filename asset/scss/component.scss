@@ -1,0 +1,17 @@
+.gbtn {
+  height: 30px;
+  border: 0;
+  font-size: $fontSizeSmall;
+  background: $fontColorPrimary;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-black);
+  display: none;
+}

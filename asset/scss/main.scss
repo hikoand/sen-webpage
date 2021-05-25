@@ -1,0 +1,159 @@
+#header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: left;
+  background: lightblue;
+  .header__util {
+    overflow: hidden;
+    background: $layoutBg;
+    @include centerWidth;
+    .header__util__left {
+      float: left;
+      li {
+        float: left;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: $fontSizeSmall;
+      }
+    }
+    .header__util__right {
+      float: right;
+      li {
+        float: left;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: $fontSizeSmall;
+      }
+    }
+  }
+  .header__search {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    @include centerWidth;
+    .header__search__img {
+      float: left;
+      a {
+        display: inline-block;
+        width: 242px;
+        height: 103px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .header__search__searchbox {
+      display: inline-block;
+      @include verticalPosition;
+      fieldset {
+        padding: 10px 50px;
+        margin: 0;
+        input {
+          width: 400px;
+          height: 30px;
+          padding: 8px 3px;
+          border: 0;
+          vertical-align: bottom;
+          border: 3px solid $fontColorPrimary;
+          font-size: $fontSizeSmall;
+          font-weight: bold;
+        }
+      }
+    }
+    .header__search__logo {
+      line-height: 0;
+      @include verticalPosition;
+      right: 0;
+      a {
+        display: inline-block;
+        width: 189px;
+        height: 43px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .header__navbar {
+    @include centerWidth;
+    background: $borderColorPrimary;
+    .navbar__menu {
+      display: flex;
+      justify-content: center;
+    }
+    a {
+      display: inline-block;
+      padding: 10px 40px;
+      margin-right: 20px;
+      font-weight: 800;
+      color: #fff;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .sub_2depth {
+      position: absolute;
+      z-index: 1000;
+      left: 0;
+      top: 150px;
+      width: 100%;
+      background: #f5f5f5;
+      border-bottom: 1px solid #6999c9;
+
+      .nav_box {
+        position: relative;
+        z-index: 1;
+        width: 980px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .nav_left {
+          float: left;
+          width: 170px;
+        }
+        .depth1 {
+          height: 400px;
+          background: url(../../img/header/gnb_bg1.jpg) no-repeat center bottom;
+        }
+        .nav_right {
+          float: left;
+          width: 790px;
+          ul {
+            li {
+              overflow: hidden;
+              a {
+                display: inline-block;
+                float: left;
+                width: 157px;
+                /* width: 164px; */
+                height: auto;
+                padding: 7px 0 5px 13px;
+                font-size: 13px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                vertical-align: middle;
+                box-sizing: border-box;
+                display: table-cell;
+                line-height: 21px;
+                letter-spacing: -1px;
+                text-decoration: none;
+              }
+              .sub_3depth {
+                float: left;
+                width: 575px;
+                .width: 588px;
+                padding: 7px 0 7px 25px;
+                border-top: 1px solid #e7e7e7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

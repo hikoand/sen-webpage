@@ -1,0 +1,254 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #555555;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1d53ab;
+}
+
+a:hover {
+  color: #555555;
+}
+
+img,
+fieldset {
+  border: 0 none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.gbtn {
+  height: 30px;
+  border: 0;
+  font-size: 12px;
+  background: #1d53ab;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-black);
+  display: none;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: left;
+  background: lightblue;
+}
+
+#header .header__util {
+  overflow: hidden;
+  background: #dedede;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+#header .header__util .header__util__left {
+  float: left;
+}
+
+#header .header__util .header__util__left li {
+  float: left;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#header .header__util .header__util__right {
+  float: right;
+}
+
+#header .header__util .header__util__right li {
+  float: left;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#header .header__search {
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+#header .header__search .header__search__img {
+  float: left;
+}
+
+#header .header__search .header__search__img a {
+  display: inline-block;
+  width: 242px;
+  height: 103px;
+}
+
+#header .header__search .header__search__img a img {
+  width: 100%;
+  height: 100%;
+}
+
+#header .header__search .header__search__searchbox {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#header .header__search .header__search__searchbox fieldset {
+  padding: 10px 50px;
+  margin: 0;
+}
+
+#header .header__search .header__search__searchbox fieldset input {
+  width: 400px;
+  height: 30px;
+  padding: 8px 3px;
+  border: 0;
+  vertical-align: bottom;
+  border: 3px solid #1d53ab;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#header .header__search .header__search__logo {
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+#header .header__search .header__search__logo a {
+  display: inline-block;
+  width: 189px;
+  height: 43px;
+}
+
+#header .header__search .header__search__logo a img {
+  width: 100%;
+  height: 100%;
+}
+
+#header .header__navbar {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #1d53ab;
+}
+
+#header .header__navbar .navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header .header__navbar a {
+  display: inline-block;
+  padding: 10px 40px;
+  margin-right: 20px;
+  font-weight: 800;
+  color: #fff;
+}
+
+#header .header__navbar a:last-child {
+  margin-right: 0;
+}
+
+#header .header__navbar .sub_2depth {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  top: 150px;
+  width: 100%;
+  background: #f5f5f5;
+  border-bottom: 1px solid #6999c9;
+}
+
+#header .header__navbar .sub_2depth .nav_box {
+  position: relative;
+  z-index: 1;
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#header .header__navbar .sub_2depth .nav_box .nav_left {
+  float: left;
+  width: 170px;
+}
+
+#header .header__navbar .sub_2depth .nav_box .depth1 {
+  height: 400px;
+  background: url(../../img/header/gnb_bg1.jpg) no-repeat center bottom;
+}
+
+#header .header__navbar .sub_2depth .nav_box .nav_right {
+  float: left;
+  width: 790px;
+}
+
+#header .header__navbar .sub_2depth .nav_box .nav_right a {
+  display: inline-block;
+  float: left;
+  width: 170px;
+  width: 157px;
+  /* width: 164px; */
+  height: auto;
+  padding: 7px 0 5px 13px;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: table-cell;
+  line-height: 21px;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+// scss 파일 분화
+@import "var.scss";
+@import "mixin.scss";
+@import "initial.scss";
+@import "common.scss";
+@import "component.scss";
+@import "layout.scss";
+
+//페이지분화
+@import "main.scss";
+@import "subpage.scss";
+
+// @import "gallery.scss";

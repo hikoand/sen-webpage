@@ -1,0 +1,10 @@
+@mixin centerWidth {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+@mixin verticalPosition {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
